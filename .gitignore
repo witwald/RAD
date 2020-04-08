@@ -1,0 +1,10 @@
+*.asv
+/bin/**
+/obj/**
+*.3
+*.cbp
+*.layout
+*.depend
+*_*
+RAD66.for
+RAD.for
