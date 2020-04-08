@@ -25,11 +25,16 @@ C code. The main changes relate to RAD's conversion to use Fortran 77.
 C The use of Holleriths has been eliminated and hopefully improves
 C clarity for the user.
 C
-C REFERENCE:
+C REFERENCES:
 C
 C Lampton, M. An interactive numerical analysis code for linear
-C electroacoustic systems. Acustica, Volume 42, No. 2, 1979,
+C electroacoustic systems. Acustica, Volume 42, Number 2, 1979,
 C pages 115-120.
+C
+C
+C Lampton, M. Transmission matrices in electroacoustics. Acta
+C Acustica united with Acustica, Volume 39, Number 4, 1978,
+C pp. 239-251.
 
       IMPLICIT NONE
 
