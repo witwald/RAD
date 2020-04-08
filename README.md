@@ -3,7 +3,7 @@
 This program is an interactive numerical analysis code for the study
 of linear electroacoustic systems using the T-matrix technique.
 
-Program RAD was written by Michael Lampton as part of a study of
+Program RAD was originally written by Michael Lampton as part of a study of
 acoustic resonances in transmission-line and bass-reflex loudspeaker
 enclosures. It provides examples of techniques that are useful in
 interactively modifying parameter arrays, building a system T-matrix,
