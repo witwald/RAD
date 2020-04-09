@@ -197,7 +197,7 @@ C.... DONE WITH PLOTTING. WHAT NEXT?
 
 C=======================================================================
 
-      SUBROUTINE MULT(X,Y,XY)
+      SUBROUTINE MULT(X,Y, XY)
 
       IMPLICIT NONE
 
@@ -223,7 +223,7 @@ C.... PERMIT CALLING SEQUENCES SUCH AS: CALL MULT(X,Y,X).
 
 C=======================================================================
 
-      SUBROUTINE ZMAT(Z,T)
+      SUBROUTINE ZMAT(Z, T)
 
       IMPLICIT NONE
 
@@ -239,7 +239,7 @@ C=======================================================================
 
 C=======================================================================
 
-      SUBROUTINE YMAT(Y,T)
+      SUBROUTINE YMAT(Y, T)
 
       IMPLICIT NONE
 
@@ -255,7 +255,7 @@ C=======================================================================
 
 C=======================================================================
 
-      SUBROUTINE EXPO(HORN,W,T)
+      SUBROUTINE EXPO(HORN,W, T)
 
 C CONSTANTS IN HORN(4) ARE: LENGTH, MOUTH AREA, RESISTIVITY, FLARE RATE.
 
@@ -292,7 +292,7 @@ C CONSTANTS IN HORN(4) ARE: LENGTH, MOUTH AREA, RESISTIVITY, FLARE RATE.
 
 C=======================================================================
 
-      SUBROUTINE SPKR(P,W,T,IERR)
+      SUBROUTINE SPKR(P,W, T,IERR)
 
 C CALLING QUANTITIES MUST BE:
 C
@@ -330,7 +330,7 @@ C.... CATCHES ERRONEOUS CALLING VALUES, FOR TRACING ERRORS.
 
 C=======================================================================
 
-      SUBROUTINE FREESP(D,W,T,IERR)
+      SUBROUTINE FREESP(D,W, T,IERR)
 
 C COMPUTES FREE SPACE COUPLING IN FOUR PI STERADIANS.
 C D = DISTANCE BETWEEN PORTS, IN METERS.
@@ -365,7 +365,7 @@ C D = DISTANCE BETWEEN PORTS, IN METERS.
 
 C=======================================================================
 
-      SUBROUTINE SIPO(X,Y,Z,IERR)
+      SUBROUTINE SIPO(X,Y, Z,IERR)
 
 C COMBINES T-MATRICES X AND Y WITH SERIES INPUTS AND PARALLEL OUTPUTS.
 
@@ -393,7 +393,7 @@ C COMBINES T-MATRICES X AND Y WITH SERIES INPUTS AND PARALLEL OUTPUTS.
 
 C=======================================================================
 
-      SUBROUTINE SIZO(U,V,Z,T,IERR)
+      SUBROUTINE SIZO(U,V,Z, T,IERR)
 
 C                  * U * Z1
 C  INPUT ** SERIES         Z3 ** OUTPUT
@@ -456,7 +456,7 @@ C.... CALCULATE THE T MATRIX.
 
 C=======================================================================
 
-      SUBROUTINE PIZO(U,V,Z,T,IERR)
+      SUBROUTINE PIZO(U,V,Z, T,IERR)
 
 C                    * U * Z1
 C  INPUT ** PARALLEL          Z3 ** OUTPUT
