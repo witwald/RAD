@@ -24,4 +24,4 @@ pages 115-120.
 
 Lampton, M. Transmission matrices in electroacoustics. Acta
 Acustica united with Acustica, Volume 39, Number 4, 1978,
-pp. 239-251.
+pages 239-251.
