@@ -1,6 +1,6 @@
 C=======================================================================
 
-      PROGRAM RAD
+      PROGRAM RAD TWO
 
 C This program is an interactive numerical analysis code for the study
 C of linear electroacoustic systems using the T-matrix technique.
@@ -30,7 +30,6 @@ C
 C Lampton, M. An interactive numerical analysis code for linear
 C electroacoustic systems. Acustica, Volume 42, Number 2, 1979,
 C pages 115-120.
-C
 C
 C Lampton, M. Transmission matrices in electroacoustics. Acta
 C Acustica united with Acustica, Volume 39, Number 4, 1978,
@@ -165,7 +164,8 @@ C.... FINISHED WITH THE CALCULATION. FIND OUT WHAT PLOTS ARE WANTED.
 
 C.... CRT PLOT DONE. WANT IT PRINTED?
 
-      WRITE(6,'(A)') ' WANT IT PRINTED? TYPE P.'
+      WRITE(6,*)
+      WRITE(6,'(A)') ' WANT IT PRINTED TO LOGICAL UNIT 3? TYPE P.'
       READ(5,'(A1)') PR
       IF(PR.EQ.HP) THEN
         WRITE(3,'(1X,A)') 'RAD VERSION 2.4, REVISED 10 OCT 1977, MLL.'
@@ -435,7 +435,7 @@ C.... CHECK FOR ZERO DENOMINATOR.
 C.... CALCULATE THE NUMERATOR OF THE T MATRIX.
 
       W(1) = (U(1)*V(4)+U(3)*V(2))*Z(1,1) + (U(4)*V(1)+U(2)*V(3))*Z(2,2)
-     &     +(U(1)*V(3) + U(3)*V(1))*M33 + DETU*Z(1,2) + DETV*Z(2,1)
+     &     + (U(1)*V(3) + U(3)*V(1))*M33 + DETU*Z(1,2) + DETV*Z(2,1)
      &     + U(2)*V(4) + U(4)*V(2)
       W(2) = (U(1)*V(3)+U(3)*V(1))*DETZ + DETU*M21 + DETV*M12
      &     + (U(2)*V(4)+U(4)*V(2))*Z(3,3)
