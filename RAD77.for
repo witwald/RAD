@@ -37,14 +37,14 @@ C pp. 239-251.
 
       IMPLICIT NONE
 
-      COMPLEX   UNITY(4), MINUS(4)
-      COMPLEX   ZRAD, T(4), U(4), V(4)
-      COMPLEX   RESP(128), ZIN(128), DET(128)
-      REAL      ENCL(4), VENT(4), WOOF(7), ENTRY(8)
-      REAL      A, F, FMAX, FMIN, RRAD, PI, TWOPI, FOURPI, W, RHOAIR
-      CHARACTER HC*1, HD*1, HF*1, HL*1, HP*1, HR*1, HZ*1
-      CHARACTER RZ*1, BC*1, PR*1, WHAT*1
-      INTEGER   I, IBAD, J, NUM
+      COMPLEX*8   UNITY(4), MINUS(4)
+      COMPLEX*8   ZRAD, T(4), U(4), V(4)
+      COMPLEX*8   RESP(128), ZIN(128), DET(128)
+      REAL*4      ENCL(4), VENT(4), WOOF(7), ENTRY(8)
+      REAL*4      A, F, FMAX, FMIN, RRAD, PI, TWOPI, FOURPI, W, RHOAIR
+      CHARACTER*1 HC, HD, HF, HL, HP, HR, HZ
+      CHARACTER*1 RZ, BC, PR, WHAT
+      INTEGER*4   I, IBAD, J, NUM
 
       DATA UNITY /( 1.0,0.0), (0.0,0.0), (0.0,0.0), ( 1.0,0.0)/
       DATA MINUS /(-1.0,0.0), (0.0,0.0), (0.0,0.0), (-1.0,0.0)/
