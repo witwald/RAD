@@ -1,6 +1,6 @@
 C=======================================================================
 
-      PROGRAM RAD TWO
+      PROGRAM RADTWO
 
 C This program is an interactive numerical analysis code for the study
 C of linear electroacoustic systems using the T-matrix technique.
